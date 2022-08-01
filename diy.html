@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>A Simple Calculator</title>
+	<link href="diy_styles.css" rel="stylesheet" media="all" />
+</head>
+
+<body>
+<h1>WEB CALCULATOR</h1>
+
+<table>
+	<tr>
+		<td colspan="4">
+			<input type="text" name="output" id="answer">
+		</td>
+	</tr>	
+
+
+	<tr>
+		<td>
+			<input type="button" name="one" value="1" onclick="display('1')">
+		</td>
+		<td>
+			<input type="button" name="two" value="2" onclick="display('2')">
+		</td>
+		<td>
+			<input type="button" name="three" value="3" onclick="display('3')">
+		</td>
+		<td>
+			<input type="button" class="operator" name="plus" value="+" onclick="display('+')">		
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<input type="button" name="four" value="4" onclick="display('4')">
+		</td>
+		<td>
+			 <input type="button" name="five" value="5" onclick="display('5')">	
+		</td>
+		<td>
+			 <input type="button" name="six" value="6" onclick="display('6')">
+		</td>
+		<td>
+			  <input type="button" class="operator" name="minus" value="-" onclick="display('-')">
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<input type="button" name="seven" value="7" onclick="display('7')">
+		</td>
+		<td>
+			<input type="button" name="eight" value="8" onclick="display('8')">
+		</td>
+		<td>
+			<input type="button" name="nine" value="9" onclick="display('9')"> 
+		</td>
+		<td>
+			<input type="button" class="operator" name="times" value="*" onclick="display('*')">
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<input type="button" id="clear" name="clear" value=" C " onclick="clearText()">
+		</td>
+		<td>
+			<input type="button" name="zero" value="0" onclick="display('0')">
+		</td>
+		<td>
+			<input type="button" name="eq" value=" = " onclick="compute()">
+		</td>
+		<td>
+			<input type="button" class="operator" name="div" value="/" onclick="display('/')">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="button" id="clearOne" name="clearOne" value=" CE " onclick="clearOneText()">
+		</td>
+		<td>
+			<input type="button" name="openBracket" value="(" onclick="display('(')">
+		</td>
+		<td>
+			<input type="button" name="closeBracket" value=")" onclick="display(')')">
+		</td>
+		<td>
+			<input type="button" class="operator" name="mod" value="%" onclick="display('%')">
+		</td>
+	</tr>
+           
+</table>
+
+<p>
+Project by: K Nanditha
+<br>
+Register number: 21BPS1585
+</p>
+<script>
+	function display(number){
+		var x = document.getElementById("answer").value;
+		x=x+number;
+		document.getElementById("answer").value = x;
+	}
+	
+	function clearText(){
+		var x = "";
+		document.getElementById("answer").value = x;
+	}
+	
+	function clearOneText(){
+		var x = document.getElementById("answer").value;
+		var y = x.substring(0,x.length-1);
+		document.getElementById("answer").value = y;
+	}
+	
+	function compute(){
+		var x = document.getElementById("answer").value;
+		var ans = eval(x);
+		document.getElementById("answer").value = ans;
+	}
+</script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+body{
+    background-color: #cab1f0;
+}
+
+h1{
+    text-align: center;
+    color: #1d1482;
+    font-family: "Times New Roman";
+}
+
+p{
+    text-align: center;
+    color: #1d1482;
+    font-family: "Times New Roman";
+}
+
+table{
+    margin: auto;
+    background-color: #5a8bed;
+    width: 295px;
+    height: 325px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+input{
+    outline: 0;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    border: 0;
+    color: #495069;
+    background-color: 4px;
+    width: 60px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+}
+
+.operator{
+    background-color: #eef097;
+    position: relative;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+
+#clear{
+    float: left;
+    position: relative;
+    display: block;
+    color: #ffffff;
+    background-color: #fa4872;
+    margin-bottom: 15px;
+}
+#clearOne{
+    float: left;
+    position: relative;
+    display: block;
+    color: #ffffff;
+    background-color: #fa4872;
+    margin-bottom: 15px;
+}
+#answer{
+    width: 270px;
+    font-size: 26px;
+    text-align: center;
+    background-color: #f1faeb;
+    float: left;
+}
+/* answer hover effect */
+#answer:hover{
+    width: 270px;
+    font-size: 26px;
+    text-align: center;
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+    background-color: #f1faeb;
+}
+/* add input hover effect */
+input:hover{
+    border: 0 solid #000;
+    background-color: #82ecff;
+    border-radius: 4px;
+    width: 60px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px #644294;
+    margin-bottom: 15px;
+}
+/* hover */
+.operator:hover{
+    background-color: #edbf4c;
+    box-shadow: 0 4px #b7c259;
+    margin-bottom: 15px;
+}
+/* hover */
+#clear:hover{
+    float: left;
+    display: block;
+    background-color: #96d45d;
+    margin-bottom: 15px;
+    box-shadow: 0 4px #cc7f86;
+}
+
+#clearOne:hover{
+    float: left;
+    display: block;
+    background-color: #96d45d;
+    margin-bottom: 15px;
+    box-shadow: 0 4px #cc7f86;
+}
